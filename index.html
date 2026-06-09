@@ -746,7 +746,6 @@ submitBtn.disabled = true;
 fetch('https://script.google.com/macros/s/AKfycbybA_-fDX3ukvGASLExURbRvoGQ4xLImPJ2xsDM5ktX34qs6IgLZ_MNrBgOPHif3WIvDA/exec', {
   method: 'POST',
   mode: 'no-cors',
-  headers: { 'Content-Type': 'application/json' },
   body: JSON.stringify(formObj)
 })
 .then(() => {
