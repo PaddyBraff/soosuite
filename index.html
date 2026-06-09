@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://api.rss2json.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Soo Suites — Student Housing in Sault Ste. Marie | Rooms Near Sault College</title>
+
+<!-- SEO Meta Tags -->
+<meta name="description" content="Affordable, fully-furnished student housing in Sault Ste. Marie, Ontario. Rooms just a 2-minute walk from Sault College. Apply online today — Soo Suites.">
+<meta name="keywords" content="student housing Sault Ste Marie, rooms near Sault College, student accommodation SSM, Algoma University housing, off-campus housing Sault Ste Marie, student rooms Ontario, Soo Suites, furnished rooms SSM, international student housing Canada">
+<meta name="author" content="Soo Suites">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://soosuites.com/">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://soosuites.com/">
+<meta property="og:title" content="Soo Suites — Student Housing in Sault Ste. Marie">
+<meta property="og:description" content="Comfortable, affordable student accommodations just steps from Sault College. Fully furnished rooms with Wi-Fi. Apply online today.">
+<meta property="og:image" content="https://soosuites.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_CA">
+<meta property="og:site_name" content="Soo Suites">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Soo Suites — Student Housing in Sault Ste. Marie">
+<meta name="twitter:description" content="Fully furnished student rooms a 2-minute walk from Sault College. Wi-Fi included. Apply now!">
+<meta name="twitter:image" content="https://soosuites.com/og-image.jpg">
+
+<!-- Geo Tags (Local SEO) -->
+<meta name="geo.region" content="CA-ON">
+<meta name="geo.placename" content="Sault Ste. Marie">
+<meta name="geo.position" content="46.5136;-84.3358">
+<meta name="ICBM" content="46.5136, -84.3358">
+
+<!-- Structured Data: Local Business -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LodgingBusiness",
+  "name": "Soo Suites",
+  "description": "Affordable, fully-furnished student housing in Sault Ste. Marie, Ontario. Located within a 2-minute walk to Sault College.",
+  "url": "https://soosuites.com",
+  "telephone": "",
+  "email": "",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Sault Ste. Marie",
+    "addressRegion": "ON",
+    "addressCountry": "CA"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 46.5136,
+    "longitude": -84.3358
+  },
+  "image": "https://soosuites.com/og-image.jpg",
+  "priceRange": "$$",
+  "amenityFeature": [
+    {"@type": "LocationFeatureSpecification", "name": "High-Speed Wi-Fi", "value": true},
+    {"@type": "LocationFeatureSpecification", "name": "Furnished Rooms", "value": true},
+    {"@type": "LocationFeatureSpecification", "name": "Laundry Facilities", "value": true},
+    {"@type": "LocationFeatureSpecification", "name": "Shared Kitchen", "value": true}
+  ],
+  "audience": {
+    "@type": "Audience",
+    "audienceType": "College Students"
+  }
+}
+</script>
+
+<!-- Structured Data: Webpage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Soo Suites — Student Housing in Sault Ste. Marie",
+  "description": "Affordable, fully-furnished student housing near Sault College and Algoma University in Sault Ste. Marie, Ontario.",
+  "url": "https://soosuites.com",
+  "inLanguage": "en-CA",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Soo Suites",
+    "url": "https://soosuites.com"
+  }
+}
+</script>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --navy: #2a3d4f;
+    --blue: #4ecdc4;
+    --sky: #7eddd6;
+    --warm: #d64b6a;
+    --amber: #e8708a;
+    --cream: #f8fafb;
+    --sand: #e8f4f3;
+    --text: #2c2c2c;
+    --muted: #6b7280;
+    --white: #ffffff;
+    --radius: 12px;
+    --teal: #4ecdc4;
+    --teal-dark: #3ab0a8;
+    --rose: #d64b6a;
+    --rose-light: #e8708a;
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--text);
+    background: var(--cream);
+    line-height: 1.7;
+  }
+  h1, h2, h3, h4 { font-family: 'DM Serif Display', serif; }
+  a { color: var(--teal-dark); text-decoration: none; }
+
+  /* NAV */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(42, 61, 79, 0.97);
+    backdrop-filter: blur(12px);
+    padding: 0 2rem;
+    display: flex; align-items: center; justify-content: space-between;
+    height: 68px;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.12);
+  }
+  nav .logo {
+    display: flex; align-items: center; gap: 10px;
+  }
+  nav .logo img { height: 44px; }
+  nav .logo-group { display: flex; flex-direction: column; }
+  nav .logo-text {
+    font-family: 'DM Serif Display', serif;
+    color: var(--white); font-size: 1.3rem; line-height: 1.2;
+  }
+  nav .logo-text span { color: var(--teal); }
+  nav .logo-links {
+    display: flex; gap: 0.5rem; margin-top: 2px;
+  }
+  nav .logo-links a {
+    font-size: 0.7rem; color: var(--teal); font-weight: 700;
+    letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 1px 7px; border: 1px solid rgba(78,205,196,0.4);
+    border-radius: 4px; transition: all 0.2s;
+  }
+  nav .logo-links a:hover { background: var(--teal); color: var(--navy); }
+  nav .logo-links .sep {
+    color: rgba(255,255,255,0.2); font-size: 0.72rem;
+  }
+  nav ul {
+    list-style: none; display: flex; gap: 2rem;
+  }
+  nav ul li a {
+    color: rgba(255,255,255,0.8); font-size: 0.88rem;
+    font-weight: 500; letter-spacing: 0.03em;
+    transition: color 0.2s;
+  }
+  nav ul li a:hover { color: var(--teal); }
+
+  /* HERO */
+  .hero {
+    padding: 120px 2rem 100px;
+    text-align: center;
+    background: linear-gradient(135deg, var(--navy) 0%, #35636b 50%, var(--teal) 100%);
+    color: var(--white);
+    position: relative; overflow: hidden;
+  }
+  .hero::after {
+    content: ''; position: absolute; bottom: -2px; left: 0; right: 0;
+    height: 50px;
+    background: var(--cream);
+    clip-path: ellipse(55% 100% at 50% 100%);
+  }
+  .hero h1 { font-size: 3.2rem; margin-bottom: 1rem; line-height: 1.15; }
+  .hero p { font-size: 1.15rem; opacity: 0.85; max-width: 600px; margin: 0 auto; }
+  .hero .accent { color: var(--rose-light); }
+
+  /* SECTION WRAPPER */
+  .section {
+    max-width: 1100px; margin: 0 auto;
+    padding: 60px 2rem;
+  }
+  .section-title {
+    text-align: center; margin-bottom: 2.5rem;
+  }
+  .section-title h2 {
+    font-size: 2.2rem; color: var(--navy); margin-bottom: 0.5rem;
+  }
+  .section-title h2.rental-heading {
+    color: var(--rose);
+    font-size: 2.5rem;
+    position: relative;
+    display: inline-block;
+  }
+  .section-title h2.rental-heading::before,
+  .section-title h2.rental-heading::after {
+    content: '✦';
+    font-size: 0.9rem;
+    color: var(--teal);
+    position: relative;
+    top: -6px;
+    margin: 0 10px;
+  }
+  .section-title p {
+    color: var(--muted); font-size: 1rem; max-width: 600px; margin: 0 auto;
+  }
+  .divider {
+    width: 60px; height: 4px; background: var(--rose);
+    border-radius: 2px; margin: 0.8rem auto 0;
+  }
+
+  /* NEWS TICKER */
+  .news-section {
+    background: var(--navy); color: var(--white);
+    padding: 12px 2rem; margin-top: 0;
+    overflow: hidden;
+  }
+  .news-label {
+    display: inline-block; background: var(--teal); color: var(--navy);
+    font-weight: 700; font-size: 0.75rem; padding: 3px 10px;
+    border-radius: 4px; margin-right: 12px; text-transform: uppercase;
+    letter-spacing: 0.05em; vertical-align: middle;
+  }
+  .news-ticker {
+    display: inline-block; overflow: hidden;
+    white-space: nowrap; vertical-align: middle;
+    max-width: calc(100% - 100px);
+  }
+  .news-ticker-inner {
+    display: inline-block;
+    animation: ticker 75s linear infinite;
+  }
+  .news-ticker-inner span {
+    margin-right: 3rem; font-size: 0.9rem; opacity: 0.9;
+  }
+  @keyframes ticker {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  /* COLLEGES */
+  .colleges-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;
+  }
+  .college-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .college-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+  }
+  .college-card img {
+    width: 100%; height: 220px; object-fit: cover;
+  }
+  .college-card .card-body { padding: 1.5rem; }
+  .college-card h3 { font-size: 1.4rem; color: var(--navy); margin-bottom: 0.5rem; }
+  .college-card p { color: var(--muted); font-size: 0.92rem; }
+
+  /* HOUSING CAROUSEL */
+  .housing-bg {
+    background: linear-gradient(135deg, var(--sand) 0%, var(--cream) 100%);
+    padding: 60px 0;
+  }
+  .carousel-wrapper {
+    position: relative;
+    max-width: 800px; margin: 0 auto 1rem;
+    background: var(--navy);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+  }
+  .carousel-slide {
+    display: none;
+    position: relative;
+  }
+  .carousel-slide.active { display: block; }
+  .carousel-slide img {
+    width: 100%; display: block;
+    aspect-ratio: 4/3; object-fit: cover;
+  }
+  .slide-label {
+    position: absolute; bottom: 0; left: 0; right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.65));
+    color: var(--white); padding: 2rem 1.5rem 1rem;
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.3rem; letter-spacing: 0.02em;
+  }
+  .carousel-btn {
+    position: absolute; top: 50%; transform: translateY(-50%);
+    background: rgba(255,255,255,0.85); border: none;
+    width: 42px; height: 42px; border-radius: 50%;
+    font-size: 1.1rem; cursor: pointer; z-index: 5;
+    color: var(--navy); display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    transition: background 0.2s;
+  }
+  .carousel-btn:hover { background: var(--white); }
+  .carousel-btn.prev { left: 12px; }
+  .carousel-btn.next { right: 12px; }
+  .carousel-dots {
+    display: flex; justify-content: center; gap: 8px; margin-top: 1rem;
+  }
+  .carousel-dots span {
+    width: 10px; height: 10px; border-radius: 50%;
+    background: var(--teal); opacity: 0.25;
+    cursor: pointer; transition: opacity 0.2s, transform 0.2s;
+  }
+  .carousel-dots span.active { opacity: 1; background: var(--rose); transform: scale(1.2); }
+  .housing-info {
+    max-width: 700px; margin: 2rem auto 0;
+    text-align: center;
+  }
+  .housing-info .badge {
+    display: inline-block; background: var(--teal); color: var(--white);
+    font-weight: 700; font-size: 0.8rem; padding: 4px 14px;
+    border-radius: 20px; margin-bottom: 1rem;
+    letter-spacing: 0.05em;
+  }
+  .housing-info p { color: var(--muted); font-size: 0.95rem; line-height: 1.8; }
+
+  /* QUESTIONNAIRE */
+  .questionnaire-bg {
+    background: var(--white);
+    padding: 60px 0;
+  }
+  .form-container {
+    max-width: 700px; margin: 0 auto;
+    background: var(--cream);
+    border-radius: var(--radius);
+    padding: 2.5rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+  }
+  .form-group { margin-bottom: 1.5rem; }
+  .form-group label {
+    display: block; font-weight: 600; font-size: 0.92rem;
+    margin-bottom: 0.4rem; color: var(--navy);
+  }
+  .form-group label .req { color: #e74c3c; }
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group input[type="tel"],
+  .form-group input[type="date"],
+  .form-group textarea,
+  .form-group select {
+    width: 100%; padding: 10px 14px;
+    border: 1.5px solid #d1d5db;
+    border-radius: 8px; font-size: 0.92rem;
+    font-family: inherit;
+    background: var(--white);
+    transition: border-color 0.2s;
+  }
+  .form-group input:focus,
+  .form-group textarea:focus,
+  .form-group select:focus {
+    outline: none; border-color: var(--teal);
+  }
+  .form-group textarea { resize: vertical; min-height: 80px; }
+  .disclaimer {
+    background: #fff3f5;
+    border-left: 4px solid var(--rose);
+    padding: 1rem 1.2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 0 8px 8px 0;
+    font-size: 0.85rem;
+    color: #5a2a35;
+    line-height: 1.6;
+  }
+  .disclaimer strong { color: var(--rose); }
+  .radio-group { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 0.3rem; }
+  .radio-group label {
+    font-weight: 400; font-size: 0.9rem; color: var(--text);
+    display: flex; align-items: center; gap: 6px; cursor: pointer;
+  }
+  .radio-group input { accent-color: var(--teal); }
+  .btn-submit {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--teal), var(--teal-dark));
+    color: var(--white); padding: 12px 36px;
+    border: none; border-radius: 8px; font-size: 1rem;
+    font-weight: 600; cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(78,205,196,0.35);
+  }
+
+  /* STORE */
+  .coming-soon {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, var(--sand), var(--cream));
+    border-radius: var(--radius);
+    border: 2px dashed var(--teal);
+  }
+  .coming-soon p {
+    font-family: 'DM Serif Display', serif;
+    font-size: 4rem;
+    color: var(--teal);
+    letter-spacing: 0.04em;
+    opacity: 0.75;
+  }
+
+  /* FOOTER */
+  footer {
+    background: var(--navy); color: rgba(255,255,255,0.7);
+    text-align: center; padding: 2.5rem 2rem;
+    font-size: 0.88rem;
+  }
+  footer strong { color: var(--teal); }
+
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    nav ul { gap: 0.8rem; }
+    nav ul li a { font-size: 0.78rem; }
+    .hero h1 { font-size: 2.2rem; }
+    .colleges-grid { grid-template-columns: 1fr; }
+    .coming-soon p { font-size: 2.5rem; }
+    .section-title h2.rental-heading { font-size: 2rem; }
+  }
+  @media (max-width: 480px) {
+    nav { flex-direction: column; height: auto; padding: 10px 1rem; gap: 6px; }
+    nav ul { flex-wrap: wrap; justify-content: center; gap: 0.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+  <div class="logo">
+    <img src="images/SooSuiteslogo copy.svg" alt="Soo Suites logo">
+    <div class="logo-group">
+      <div class="logo-text">Soo <span>Suites</span></div>
+      <div class="logo-links">
+        <a href="housing.html">Housing</a>
+        <span class="sep">·</span>
+        <a href="blog.html">Blog</a>
+      </div>
+    </div>
+  </div>
+  <ul>
+    <li><a href="#news">News</a></li>
+    <li><a href="#studying">Studying</a></li>
+    <li><a href="#housing">Student Housing</a></li>
+    <li><a href="#questionnaire">Rental Questionnaire</a></li>
+    <li><a href="#store">Store</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <img src="images/logo.svg" alt="Soo Suites" style="height:90px;margin-bottom:1rem;filter:brightness(0) invert(1);opacity:0.9;">
+  <h1>Your New Home in<br><span class="accent">Sault Ste. Marie</span></h1>
+  <p>Comfortable, affordable student accommodations just steps from campus. Start your college journey feeling right at home.</p>
+</section>
+
+<!-- NEWS -->
+<section id="news" class="news-section">
+  <span class="news-label">Latest News</span>
+  <div class="news-ticker">
+    <div class="news-ticker-inner" id="newsTicker">
+      <span>Loading latest news...</span>
+    </div>
+  </div>
+</section>
+
+<!-- STUDYING -->
+<section id="studying" class="section">
+  <div class="section-title">
+    <h2>Studying in Sault Ste. Marie</h2>
+    <p>Sault Ste. Marie is home to both Sault College and Algoma University — offering world-class education in a welcoming community.</p>
+    <div class="divider"></div>
+  </div>
+  <div class="colleges-grid">
+    <div class="college-card">
+      <img src="images/saultcollege.jpg" alt="Sault College campus" onerror="this.style.height='220px';this.style.background='linear-gradient(135deg,#4a90c2,#357ab8)';this.alt='Sault College';">
+      <div class="card-body">
+        <h3><a href="saultcollege.html" style="color:var(--navy);">Sault College</a></h3>
+        <p>Ontario's #1 college for student satisfaction. Hands-on learning, 80+ programs, co-op opportunities, and a modern campus. Soo Suites is just a 2-minute walk away — <a href="saultcollege.html" style="color:var(--rose);font-weight:600;">learn more &amp; apply for housing →</a></p>
+      </div>
+    </div>
+    <div class="college-card">
+      <img src="images/algomau.jpg" alt="Algoma University campus" onerror="this.style.height='220px';this.style.background='linear-gradient(135deg,#8b4513,#a0522d)';this.alt='Algoma University';">
+      <div class="card-body">
+        <h3><a href="algomau.html" style="color:var(--navy);">Algoma University</a></h3>
+        <p>A close-knit university with a mission of cross-cultural learning, beautiful heritage campus, and exceptional student-to-faculty ratio. Make Soo Suites your home while you study — <a href="algomau.html" style="color:var(--rose);font-weight:600;">learn more &amp; apply for housing →</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STUDENT HOUSING -->
+<section id="housing" class="housing-bg">
+  <div class="section" style="padding-top:0;padding-bottom:0;">
+    <div class="section-title">
+      <h2>Student Housing</h2>
+      <p>Beautiful, fully-furnished rooms designed with students in mind.</p>
+      <div class="divider"></div>
+    </div>
+    <div class="carousel-wrapper">
+      <button class="carousel-btn prev" onclick="changeSlide(-1)">&#10094;</button>
+      <div class="carousel-slide active"><img src="images/m1FINAL.jpg" alt="Master Bedroom"><div class="slide-label">Master Bedroom</div></div>
+      <div class="carousel-slide"><img src="images/m2FINAL.jpg" alt="Master Bedroom"><div class="slide-label">Master Bedroom</div></div>
+      <div class="carousel-slide"><img src="images/NSFINAL.jpg" alt="North/South Room"><div class="slide-label">North/South Room</div></div>
+      <div class="carousel-slide"><img src="images/NSFINAL2.jpg" alt="North/South Room"><div class="slide-label">North/South Room</div></div>
+      <div class="carousel-slide"><img src="images/KITCHEN.jpg" alt="Kitchen"><div class="slide-label">Kitchen</div></div>
+      <div class="carousel-slide"><img src="images/BATHROOM1.jpg" alt="Bathroom"><div class="slide-label">Bathroom</div></div>
+      <div class="carousel-slide"><img src="images/Laundry.jpg" alt="Laundry Room"><div class="slide-label">Laundry Room</div></div>
+      <button class="carousel-btn next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+    <div class="carousel-dots">
+      <span class="active" onclick="goToSlide(0)"></span><span class="" onclick="goToSlide(1)"></span><span class="" onclick="goToSlide(2)"></span><span class="" onclick="goToSlide(3)"></span><span class="" onclick="goToSlide(4)"></span><span class="" onclick="goToSlide(5)"></span><span class="" onclick="goToSlide(6)"></span>
+    </div>
+    <div class="housing-info">
+      <span class="badge">🚶 2-MINUTE WALK TO SAULT COLLEGE</span>
+      <p>Our student accommodations are located within a <strong>2-minute walking distance</strong> to Sault College — so you can roll out of bed and still make it to class on time. Each room is fully furnished, includes high-speed Wi-Fi, and access to shared common areas including a kitchen and lounge. Whether you need a private master bedroom or are looking to share with a roommate, we have options that fit your budget and lifestyle.</p>
+    </div>
+  </div>
+</section>
+
+<!-- QUESTIONNAIRE -->
+<section id="questionnaire" class="questionnaire-bg">
+  <div class="section" style="padding-top:0;padding-bottom:0;">
+    <div class="section-title">
+      <h2 class="rental-heading">Rental Questionnaire</h2>
+      <p>Interested in renting? Fill out this quick form — it takes less than 5 minutes and drastically increases your chance of securing a room!</p>
+      <div class="divider"></div>
+    </div>
+    <div class="form-container">
+      <form id="rentalForm">
+        <div class="form-group">
+          <label>First &amp; Last Names of Each Person Moving In <span class="req">*</span></label>
+          <input type="text" name="names" required placeholder="e.g. John Smith, Jane Doe">
+        </div>
+        <div class="form-group">
+          <label>Phone Number of Each Person Moving In <span class="req">*</span></label>
+          <input type="tel" name="phones" required placeholder="e.g. 705-555-1234">
+        </div>
+        <div class="form-group">
+          <label>Email Address of Each Person Moving In <span class="req">*</span></label>
+          <input type="email" name="emails" required placeholder="e.g. student@email.com">
+        </div>
+        <div class="form-group">
+          <label>Which Room(s) Are You Interested In? <span class="req">*</span></label>
+          <div class="radio-group">
+            <label><input type="radio" name="room" value="Master Bedroom" required> Master Bedroom</label>
+            <label><input type="radio" name="room" value="North/South Room"> North/South Room</label>
+            <label><input type="radio" name="room" value="Any"> Any</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>How Many People Will Be Sharing the Room? <span class="req">*</span></label>
+          <div class="radio-group">
+            <label><input type="radio" name="sharing" value="1" required> 1</label>
+            <label><input type="radio" name="sharing" value="2"> 2</label>
+            <label><input type="radio" name="sharing" value="3"> 3</label>
+            <label><input type="radio" name="sharing" value="4"> 4</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>How Many Vehicles Does Everyone Moving In Own? <span class="req">*</span></label>
+          <div class="radio-group">
+            <label><input type="radio" name="vehicles" value="0" required> 0</label>
+            <label><input type="radio" name="vehicles" value="1"> 1</label>
+            <label><input type="radio" name="vehicles" value="2"> 2</label>
+            <label><input type="radio" name="vehicles" value="3"> 3</label>
+            <label><input type="radio" name="vehicles" value="4"> 4</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Do You Have Pets? If Yes, What Type, Breed &amp; How Many? <span class="req">*</span></label>
+          <input type="text" name="pets" required placeholder="e.g. No pets / 1 small dog (Pomeranian)">
+        </div>
+        <div class="form-group">
+          <label>What Is Your Preferred Move-In Date? <span class="req">*</span></label>
+          <input type="date" name="movein" required>
+        </div>
+        <div class="form-group">
+          <label>Rental Term <span class="req">*</span></label>
+          <div class="radio-group">
+            <label><input type="radio" name="term" value="4 Months" required> 4 Months</label>
+            <label><input type="radio" name="term" value="8 Months"> 8 Months</label>
+            <label><input type="radio" name="term" value="12 Months"> 12 Months</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Are you OK with a 10 p.m. guest curfew?</label>
+          <div class="radio-group">
+            <label><input type="radio" name="curfew" value="Yes"> Yes</label>
+            <label><input type="radio" name="curfew" value="No"> No</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Anything Else You'd Like to Add About Yourself or Your Living Situation?</label>
+          <textarea name="additional" placeholder="Tell us a bit about yourself..."></textarea>
+        </div>
+        <div class="form-group">
+          <label>Do You Have Any Questions for Us?</label>
+          <textarea name="questions" placeholder="Ask away!"></textarea>
+        </div>
+        <div class="form-group">
+          <label>Do you consent to a background check?</label>
+          <div class="radio-group">
+            <label><input type="radio" name="bgcheck" value="Yes"> Yes</label>
+            <label><input type="radio" name="bgcheck" value="No"> No</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Please provide 1 Reference (Optional)</label>
+          <input type="text" name="reference" placeholder="Name and contact info">
+        </div>
+        <div class="disclaimer">
+          <strong>Note:</strong> Soo Suites believes in equal opportunity for renting. Therefore, any inquiries pertaining to the identity of other tenants will result in immediate disqualification of your request.
+        </div>
+        <button type="submit" class="btn-submit">Submit Application</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- STORE -->
+<section id="store" class="section">
+  <div class="section-title">
+    <h2>Student Merch Store</h2>
+    <p>Rep your new home! Browse our collection of Soo Suites merchandise.</p>
+    <div class="divider"></div>
+  </div>
+  <div class="coming-soon">
+    <p>Coming Soon</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <img src="images/SooSuiteslogo copy.svg" alt="Soo Suites" style="height:50px;margin-bottom:0.8rem;filter:brightness(0) invert(1);opacity:0.7;">
+  <p><strong>Soo Suites</strong> — Student Accommodations in Sault Ste. Marie, Ontario</p>
+  <p style="margin-top:0.5rem;font-size:0.82rem;">&copy; Soo Suites. All rights reserved.</p>
+</footer>
+
+<script>
+// NEWS RSS FEED
+// Using rss2json API to fetch RSS feeds
+async function loadNews() {
+  const feeds = [
+    'https://www.saultcollege.ca/feed',
+    'https://www.sootoday.com/rss',
+    'https://www.cicnews.com/feed'
+  ];
+  const fallbackItems = [
+    'Sault College ranks #1 in Ontario for student satisfaction for the third consecutive year.',
+    'Algoma University announces new scholarship programs for international students.',
+    'Sault Ste. Marie welcomes record number of international students this fall semester.',
+    'Canada updates immigration pathways for post-graduate work permits — more opportunities for graduates.',
+    'New student wellness centre opens at Sault College campus.',
+    'Algoma University expands co-op programs across multiple faculties.',
+    'City of Sault Ste. Marie launches newcomer support initiative for international students.',
+    'Canadian government increases study permit processing capacity for new intake.'
+  ];
+
+  let newsItems = [];
+
+  for (const feedUrl of feeds) {
+    try {
+      const res = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(feedUrl)}&count=5`);
+      const data = await res.json();
+      if (data.items) {
+        data.items.forEach(item => {
+          newsItems.push(item.title);
+        });
+      }
+    } catch (e) {
+      // Feed unavailable, continue
+    }
+  }
+
+  if (newsItems.length === 0) {
+    newsItems = fallbackItems;
+  }
+
+  const ticker = document.getElementById('newsTicker');
+  // Build spans safely using textContent to prevent XSS from RSS data
+  ticker.innerHTML = '';
+  const allItems = [...newsItems, ...newsItems]; // duplicate for seamless scroll
+  allItems.forEach(t => {
+    const span = document.createElement('span');
+    span.textContent = '📰 ' + t;
+    ticker.appendChild(span);
+  });
+}
+loadNews();
+
+
+// INPUT VALIDATION & SANITIZATION
+function sanitize(str) {
+  const div = document.createElement('div');
+  div.textContent = str;
+  return div.innerHTML;
+}
+function isValidEmail(email) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+function isValidPhone(phone) {
+  return /^[\d\s()\-+.]{7,20}$/.test(phone);
+}
+document.getElementById('rentalForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const email = this.querySelector('[name="emails"]').value.trim();
+  const phone = this.querySelector('[name="phones"]').value.trim();
+  if (!isValidEmail(email)) {
+    alert('Please enter a valid email address.');
+    return;
+  }
+  if (!isValidPhone(phone)) {
+    alert('Please enter a valid phone number.');
+    return;
+  }
+  // Sanitize all text inputs before any future submission
+  this.querySelectorAll('input[type="text"], textarea').forEach(el => {
+    el.value = sanitize(el.value);
+  });
+  alert('Thank you for your application! We will review your information and get back to you shortly.');
+  this.reset();
+});
+
+// CAROUSEL
+let currentSlide = 0;
+const slides = document.querySelectorAll('.carousel-slide');
+const dots = document.querySelectorAll('.carousel-dots span');
+
+function showSlide(n) {
+  slides.forEach(s => s.classList.remove('active'));
+  dots.forEach(d => d.classList.remove('active'));
+  currentSlide = (n + slides.length) % slides.length;
+  slides[currentSlide].classList.add('active');
+  dots[currentSlide].classList.add('active');
+}
+function changeSlide(dir) { showSlide(currentSlide + dir); }
+function goToSlide(n) { showSlide(n); }
+
+// Auto-advance every 5 seconds
+setInterval(() => changeSlide(1), 5000);
+</script>
+
+</body>
+</html>
