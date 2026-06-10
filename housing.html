@@ -197,7 +197,6 @@
   </div>
 </div>
 <script>
-
 // INPUT VALIDATION & SANITIZATION
 function sanitize(str) {
   const div = document.createElement('div');
@@ -210,8 +209,18 @@ function isValidEmail(email) {
 function isValidPhone(phone) {
   return /^[\d\s()\-+.]{7,20}$/.test(phone);
 }
+
+let lastSubmit = 0;
+
 document.getElementById('rentalForm').addEventListener('submit', function(e) {
   e.preventDefault();
+
+  if (Date.now() - lastSubmit < 60000) {
+    alert('Please wait at least 1 minute before submitting again.');
+    return;
+  }
+  lastSubmit = Date.now();
+
   const email = this.querySelector('[name="emails"]').value.trim();
   const phone = this.querySelector('[name="phones"]').value.trim();
   if (!isValidEmail(email)) {
@@ -222,12 +231,42 @@ document.getElementById('rentalForm').addEventListener('submit', function(e) {
     alert('Please enter a valid phone number.');
     return;
   }
-  // Sanitize all text inputs before any future submission
+
   this.querySelectorAll('input[type="text"], textarea').forEach(el => {
     el.value = sanitize(el.value);
   });
-  alert('Thank you for your application! We will review your information and get back to you shortly.');
-  this.reset();
+
+  const formObj = {};
+  this.querySelectorAll('input, textarea, select').forEach(el => {
+    if (el.name) {
+      if (el.type === 'radio') {
+        if (el.checked) formObj[el.name] = el.value;
+      } else {
+        formObj[el.name] = el.value;
+      }
+    }
+  });
+
+  const submitBtn = this.querySelector('.btn-submit');
+  submitBtn.textContent = 'Sending...';
+  submitBtn.disabled = true;
+
+  fetch('https://script.google.com/macros/s/AKfycbybA_-fDX3ukvGASLExURbRvoGQ4xLImPJ2xsDM5ktX34qs6IgLZ_MNrBgOPHif3WIvDA/exec', {
+    method: 'POST',
+    mode: 'no-cors',
+    body: JSON.stringify(formObj)
+  })
+  .then(() => {
+    alert('Thank you for your application! We will review your information and get back to you shortly.');
+    this.reset();
+    submitBtn.textContent = 'Submit Application';
+    submitBtn.disabled = false;
+  })
+  .catch(() => {
+    alert('There was an error submitting your application. Please try again or contact us directly.');
+    submitBtn.textContent = 'Submit Application';
+    submitBtn.disabled = false;
+  });
 });
 </script>
 <footer>
