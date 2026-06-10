@@ -132,7 +132,7 @@
   nav .logo {
     display: flex; align-items: center; gap: 10px;
   }
-  nav .logo img { height: 44px; }
+  nav .logo img { height: 44px; width: auto; object-fit: contain; }
   nav .logo-group { display: flex; flex-direction: column; }
   nav .logo-text {
     font-family: 'DM Serif Display', serif;
@@ -229,7 +229,7 @@
   .news-ticker {
     display: inline-block; overflow: hidden;
     white-space: nowrap; vertical-align: middle;
-    max-width: calc(100% - 100px);
+    max-width: calc(100% - 70px);
   }
   .news-ticker-inner {
     display: inline-block;
@@ -430,6 +430,7 @@
   @media (max-width: 480px) {
     nav { flex-direction: column; height: auto; padding: 10px 1rem; gap: 6px; }
     nav ul { flex-wrap: wrap; justify-content: center; gap: 0.5rem; }
+     nav .logo img { height: 36px; }
   }
 </style>
 </head>
