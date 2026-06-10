@@ -714,6 +714,11 @@ function isValidPhone(phone) {
 }
 document.getElementById('rentalForm').addEventListener('submit', function(e) {
   e.preventDefault();
+  if (Date.now() - lastSubmit < 60000) {
+  alert('Please wait at least 1 minute before submitting again.');
+  return;
+}
+lastSubmit = Date.now();
   const email = this.querySelector('[name="emails"]').value.trim();
   const phone = this.querySelector('[name="phones"]').value.trim();
   if (!isValidEmail(email)) {
@@ -778,6 +783,7 @@ function goToSlide(n) { showSlide(n); }
 
 // Auto-advance every 5 seconds
 setInterval(() => changeSlide(1), 5000);
+  let lastSubmit = 0;
 </script>
 
 </body>
